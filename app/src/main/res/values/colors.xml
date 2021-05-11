@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#1565C0</color>
+    <color name="item_selected">#CDCBCB</color>
+    <color name="item_unselected">#B9BABD</color>
+    <color name="bottom_navigation">#8F8D8D</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

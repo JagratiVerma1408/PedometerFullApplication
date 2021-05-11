@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/value"
+        android:ems="4"
+        android:inputType="numberDecimal">
+
+    </EditText>
+ <RadioGroup
+     android:id="@+id/unit"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+     <RadioButton
+         android:id="@+id/cm"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:checked="true"
+         android:text="cm">
+
+     </RadioButton>
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/ft"
+         android:text="ft">
+
+     </RadioButton>
+
+ </RadioGroup>
+</LinearLayout>

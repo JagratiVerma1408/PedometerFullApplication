@@ -1,0 +1,237 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:eaze="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        android:background="#E3E2E2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="TODAY"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp">
+        </TextView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/splitcounter"
+            android:layout_marginStart="260dp"
+            android:src="@drawable/ic_baseline_reorder_24">
+
+        </ImageView>
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/levels"
+        android:layout_width="40dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:background="#545559"
+        android:src="@drawable/editthree">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stepsleft"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="3000"
+                android:textColor="#000"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="5dp">
+
+            </Space>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Steps Left"
+                android:textColor="#000"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp"
+            eaze:egHighlightStrength="1"
+            eaze:egInnerPadding="75"
+            eaze:egLegendHeight="0dp">
+
+        </org.eazegraph.lib.charts.PieChart>
+
+        <TextView
+            android:id="@+id/stepsinpiechart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="225dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="steps"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/averageandtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/graph"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/average"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/averageandtotaltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/averageandtotal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/average"
+                android:textColor="#000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/total"
+                android:textColor="#000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Kcal"
+                android:textColor="#000">
+
+            </TextView>
+        </LinearLayout>
+
+        <org.eazegraph.lib.charts.BarChart
+            android:id="@+id/bargraph"
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:layout_below="@id/averageandtotaltext"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            eaze:egLegendHeight="35dp"
+            eaze:egShowValues="true">
+
+        </org.eazegraph.lib.charts.BarChart>
+    </RelativeLayout>
+
+</FrameLayout>

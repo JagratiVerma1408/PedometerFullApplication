@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E2E2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pedometer.BottomNavigation.MyProfile">
+
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/toolbar"
+       android:background="#E3E2E2">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left"
+           android:layout_marginTop="10dp"
+           android:layout_marginStart="20dp"
+           android:text="MY PROFILE"
+           android:textColor="#000"
+           android:textStyle="bold"
+           android:textSize="25dp">
+       </TextView>
+   </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="354dp"
+        android:layout_height="368dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/myprofilebk"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/setgoallayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/goal">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:id="@+id/goaltext"
+                    android:text="@string/set_goal"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="100dp"
+                android:background="#E3E2E2">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/stepsizelayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stepsize">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="@string/step_size"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="100dp"
+                android:background="#E3E2E2">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/shownotilayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/noti">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="@string/notification"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="100dp"
+                android:background="#E3E2E2">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/exportlayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ex">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="@string/export_title"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="100dp"
+                android:background="#E3E2E2">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/importlayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/im">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="@string/import_title"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="100dp"
+                android:background="#E3E2E2">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnergender"
+                    android:layout_width="131dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:textAlignment="center">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Gender"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>

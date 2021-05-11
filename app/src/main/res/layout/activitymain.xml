@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.fragment.app.FragmentContainerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment">
+
+</androidx.fragment.app.FragmentContainerView>
+<com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_gravity="bottom"
+   android:id="@+id/bottom_navigation"
+    android:background="#A6A5A5">
+</com.aurelhubert.ahbottomnavigation.AHBottomNavigation>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

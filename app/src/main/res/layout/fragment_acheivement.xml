@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pedometer.ui.Acheivement">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E2E2">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="50dp"
+            android:foregroundGravity="center"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="ACHIEVEMENTS"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/myprofilebk"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="110dp"
+              android:layout_gravity="center_horizontal"
+              android:id="@+id/mainacheivemnt"
+              android:background="@color/bottom_navigation"
+              android:src="@drawable/editthree">
+          </ImageView>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="LEVEL"
+                      android:textColor="#000"
+                      android:textSize="25dp"
+                      android:textStyle="bold">
+
+                  </TextView>
+
+                  <TextView
+                      android:id="@+id/levtext"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:text="1"
+                      android:textColor="#000"
+                      android:textSize="25dp"
+                      android:textStyle="bold">
+
+                  </TextView>
+              </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/stepslefttonextlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="3000"
+        android:textSize="20dp">
+
+    </TextView>
+    <Space
+        android:layout_width="4dp"
+        android:layout_height="4dp"></Space>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more steps to reach next level"
+        android:textSize="20dp">
+
+    </TextView>
+
+</LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="333dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    android:layout_width="350dp"
+    android:layout_height="220dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="400dp"
+    android:background="@drawable/myprofilebk"
+    app:cardElevation="50dp"
+    app:cardCornerRadius="25dp"
+    android:id="@+id/more">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+           android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="TotalSteps">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="145dp"
+                android:textColor="#787676"
+                android:text="More">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="70dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_height="80dp"
+                   android:id="@+id/three"
+                   android:src="@drawable/editthree"
+                   android:background="@color/bottom_navigation">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Level 2"
+                   android:layout_marginStart="15dp"
+                   android:textSize="20dp">
+
+               </TextView>
+
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/seven"
+                    android:src="@drawable/editseven"
+                    android:background="@color/bottom_navigation">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 3"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/ten"
+                    android:src="@drawable/edit10"
+                    android:background="@color/bottom_navigation">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 4"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/fourteen"
+                    android:src="@drawable/editfort"
+                    android:background="@color/bottom_navigation">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 5"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</FrameLayout>

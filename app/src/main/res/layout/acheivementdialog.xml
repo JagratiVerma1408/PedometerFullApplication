@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="You have Achieved Level"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="5dp"></Space>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textlevel"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="1"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/imageview"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bottom_navigation"
+        android:src="@drawable/editthree">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Congratulation"
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="5dp"></Space>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/ok"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OK"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </Button>
+</LinearLayout>
